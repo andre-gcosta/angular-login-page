@@ -11,18 +11,17 @@ interface LoginForm {
   password: FormControl,
 }
 @Component({
-  selector: 'app-login',
-  standalone: true,
-  imports: [
-    DeafultLoginLayoutComponent,
-    ReactiveFormsModule,
-    PrimaryInputComponent
-  ],
-  providers: [
-    LoginService
-  ],
-  templateUrl: './login.component.html',
-  styleUrl: './login.component.scss'
+    selector: 'app-login',
+    imports: [
+        DeafultLoginLayoutComponent,
+        ReactiveFormsModule,
+        PrimaryInputComponent
+    ],
+    providers: [
+        LoginService
+    ],
+    templateUrl: './login.component.html',
+    styleUrl: './login.component.scss'
 })
 export class LoginComponent {
   loginForm!: FormGroup<LoginForm>;

@@ -14,18 +14,17 @@ interface SignupForm {
 }
 
 @Component({
-  selector: 'app-signup',
-  standalone: true,
-  imports: [
-    DeafultLoginLayoutComponent,
-    ReactiveFormsModule,
-    PrimaryInputComponent
-  ],
-  providers: [
-    LoginService
-  ],
-  templateUrl: './signup.component.html',
-  styleUrl: './signup.component.scss'
+    selector: 'app-signup',
+    imports: [
+        DeafultLoginLayoutComponent,
+        ReactiveFormsModule,
+        PrimaryInputComponent
+    ],
+    providers: [
+        LoginService
+    ],
+    templateUrl: './signup.component.html',
+    styleUrl: './signup.component.scss'
 })
 export class SignupComponent {
   signupForm!: FormGroup<SignupForm>;
