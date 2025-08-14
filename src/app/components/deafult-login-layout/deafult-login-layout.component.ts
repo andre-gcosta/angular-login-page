@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-deafult-login-layout',
@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './deafult-login-layout.component.scss'
 })
 export class DeafultLoginLayoutComponent {
-
+  @Input() title: string = "";
+  @Input() primaryBtnText: string = "";
+  @Input() secondaryBtnText: string = "";
 }
