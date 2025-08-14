@@ -1,4 +1,5 @@
-@import "../../../styles/variables.scss";
+@use "../../../styles/variables.scss" as *;
+//@import "../../../styles/variables.scss";
 
 form {
   width: 100%;
@@ -13,5 +14,5 @@ form {
     color: $secondary-color;
     text-align: end;
   }
-  
+
 }
